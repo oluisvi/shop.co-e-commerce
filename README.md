@@ -22,8 +22,8 @@ Projeto com objetivo da criação da home page de um E-commerce, com um protóti
 
 
 ### Funcionalidades
-Página Principal (Homepage)
-Layout adaptativo (responsivo) para diferentes tamanhos de tela.
-Campo de preenchimento de Newsletter com validação de e-mail
-Menu de navegação funcional.
+Homepage.
+Layout responsivo (responsivo) para diferentes tamanhos de tela.
+Área de preenchimento de Newsletter com validação de e-mail.
+Navbar funcional.
 Integração de elementos interativos (botões, links, etc.).
