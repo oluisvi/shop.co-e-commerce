@@ -21,7 +21,7 @@ Projeto com objetivo da criação da home page de um E-commerce, com um protóti
 ### Funcionalidades
 - Homepage.
 
-- Layout responsivo (responsivo) para diferentes tamanhos de tela.
+- Layout responsivo para diferentes tamanhos de tela (Desktop e mobile).
 
 - Área de preenchimento de Newsletter com validação de e-mail.
 
