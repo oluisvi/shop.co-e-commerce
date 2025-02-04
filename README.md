@@ -1,9 +1,6 @@
 # Projeto Shop.co E-commerce
 
-Shop.co E-commerce
-Este projeto tem como objetivo criar a homepage de um protótipo desenvolvido no Figma, utilizando HTML, CSS e um pouco de TypeScript. A estrutura inicial foi pensada para ser simples, mas com uma base sólida que permitirá a expansão para outras páginas no futuro, como a página de detalhes de um produto, página de categoria e um carrinho de compras.
-
-Projeto com objetivo da criação da home page de um E-commerce, com um protótipo desenvolvido no Figma.
+Projeto com objetivo da criação da home page de um E-commerce, com um protótipo desenvolvido no Figma. O desenolvimento do projeto contém uma base que irá ser utilizada para realização de outras implementações e expansões de conteúdo a partir dela, como detalhes do produto, categoria e carrinho de compras.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
