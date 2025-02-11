@@ -1,14 +1,28 @@
-@import url("satoshi.css");
-@import url("integral_cf.css");
+@import url("./fonts-css/satoshi.css");
+@import url("./fonts-css/integral_cf.css");
+
+
+h1, h2, h3 {
+  font-family: 'Integral CF', sans-serif;
+  font-weight: bold; 
+}
+
+/* Aplicando Satoshi */
+body, p, a {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: normal; 
+}
 
 * {
   margin: auto;
   padding: 0;
   outline: none;
+  max-width: 1440px;
 }
 
 .before-nav {
   padding: 10px;
+  max-width: 100%;
   background-color: black;
   position: relative;
 }
@@ -37,6 +51,7 @@
   padding: 16px 32px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: white;
+  max-width: 100%;
 }
 
 .shop-name {
@@ -83,7 +98,7 @@
   font-size: 16px;
 }
 
-input {
+.input-search {
   border: none;
   background: none;
   outline: none;
@@ -188,14 +203,15 @@ input {
 
 .stars {
   position: absolute;
+  max-width: 100%;
 }
 
 .small-star {
-  transform: translate(750px, -400px);
+  transform: translate(800px, -450px);
 }
 
 .big-star {
-  transform: translate(1200px, -650px);
+  transform: translate(1190px, -700px);
 }
 
 /*end of section-2*/
@@ -221,7 +237,7 @@ input {
   max-width: 100%;
   height: 100vh;
   display: flex;
-  margin-left: 4rem;
+  margin-left: 3.5rem;
   margin-right: 4rem;
   border-bottom: 1px solid;
   border-color: #dadada;
@@ -229,13 +245,13 @@ input {
 
 .title-new-arrivals {
   font-size: 2rem;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 2rem 2rem 0;
   text-align: center;
 }
 
 .products {
   display: flex;
-  align-items: space-between;
+  align-items: space-around;
   gap: 1rem;
 }
 
@@ -264,7 +280,6 @@ input {
 }
 
 .product-rating {
-  display: inline;
   margin-top: 5px;
 }
 
@@ -274,10 +289,9 @@ input {
 
 .product-sale {
   display: flex;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
-  position: relative;
+  align-items: left;
+  text-align: left;
+  margin-top: 5px;  
 }
 .product-price {
   font-size: 2rem;
@@ -313,6 +327,8 @@ input {
   margin-top: 2rem;
   width: 10rem;
   height: 3rem;
+  border: 1.5px solid;
+  border-color: #c5c5c5;
   border-radius: 62px;
   box-shadow: 0 4px 8px rgba(143, 142, 142, 0.2);
   display: flex;
@@ -322,7 +338,7 @@ input {
   padding: 0;
   transition: 0.2s;
   text-align: center;
-  line-height: 51px;
+  align-items: center;
 }
 
 .view-all-btn:hover {
@@ -331,6 +347,26 @@ input {
 }
 
 /*end of section-3*/
+
+/*section-4*/
+
+.container-4 {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-left: 3.5rem;
+  margin-right: 4rem;
+  
+}
+
+.title-top-selling {
+  font-size: 2rem;
+  margin: 2rem 2rem 2rem 0;
+  text-align: center;
+
+}
+
+/*end of section-4*/
 
 /*section-5*/
 
@@ -341,7 +377,7 @@ input {
 
 .section-5-title {
   font-size: 2rem;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem;
   text-align: center;
 }
 
@@ -350,18 +386,20 @@ input {
   border: none;
   border-radius: 40px;
   margin: 4rem;
-  padding: 0;
+  padding: 1rem;
+  max-width: 100%;
+  max-height: 866px;
 }
 
 .dress-styles {
   display: flex;
+  max-width: 100%;
   flex-wrap: wrap;
-  gap: 10px;
-  position: relative;
+  gap: 30px;
+  flex-shrink: 2;
   margin-bottom: 2rem;
   margin-right: 1rem;
   margin-left: 1rem;
-  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -382,25 +420,24 @@ input {
 
 .fit-img {
   border-radius: 20px;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 /*end of section-5*/
+
+
 
 /*section-6*/
 
 .section-6 {
   display: flex;
-  max-width: 100%;
   margin-top: 5rem;
   margin-left: 4rem;
   margin-right: 4rem;
   padding: 0;
 }
 
-.container-6{
-  max-width: 100%;
-}
+
 
 .section-6-title {
   font-size: 2rem;
@@ -419,19 +456,24 @@ input {
   
 }
 
+
 .change-arrows svg {
   cursor: pointer;
 }
 
+.container-6{
+  max-width: 100%;
+}
 .custumer-ratings {
   display: flex;
-  position: relative;
-  max-width: 100%;
+  flex-direction: row;
   overflow: hidden;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1px;
+  min-width: 28%;
 }
+
+
 
 .customer-1, .customer-2, .customer-3, .customer-4, .customer-5 {
   background-color: #fff;
@@ -442,33 +484,18 @@ input {
   width: 320px;
   height: 180px;
   text-align: left;
+  margin: 0.5rem;
   transition: 0.2s ;
 }
+
 
 .customer-1:hover, .customer-2:hover, .customer-3:hover, .customer-4:hover, .customer-5:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.customer-4, .customer-5{
-  overflow: clip;
-  max-width: 100%;
-  white-space: nowrap;
-  text-align: justify;
-}
 
-.customer-4{
-  margin-left: -300px;
-  filter: blur(2px);
-  transform: translateY(-247px);
-  justify-content: left;
-}
 
-.customer-5{
-  margin-right: -300px;
-  filter: blur(2px);
-  transform: translateY(-247px);
 
-}
 
 .customer-name h3 {
   display: inline-block;
@@ -499,6 +526,7 @@ input {
 
 
 /*end of section-6*/
+
 
 /* newsletter */
 
@@ -560,10 +588,24 @@ input {
 /* end of newsletter */
 
 
+/* footer */
+
+footer{
+  background-color: #F0F0F0;
+  padding: 4rem 8rem;
+}
+
+footer ul{
+  list-style: none;
+}
+
+.section-8-title{
+  font-size: 2rem;
+}
 
 
 
-
+/*end of footer*/
 
 
 
