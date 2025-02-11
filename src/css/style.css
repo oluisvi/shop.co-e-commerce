@@ -500,6 +500,66 @@ input {
 
 /*end of section-6*/
 
+/* newsletter */
+
+.section-7{
+  background: linear-gradient(to bottom, #fff 50%, #F0F0F0 50%);
+}
+
+.newsletter {
+  max-width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  background-color: #000000;
+  padding: 4rem;
+  margin-top: 5rem;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  border-radius: 20px;
+}
+
+.newsletter-form{
+  display: flex;
+  width: 1240px;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-email{
+  height: 20px;
+  width: 330px;
+  padding: 0.5rem;
+  border-radius: 62px;
+  background-color: #fff;
+  text-align: center;
+  align-items: left;
+}
+
+.news-btn{
+  height: 40px;
+  width: 350px;
+  border-radius: 62px;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.news-btn:hover {
+  background-color: #949494;
+  color: white;
+}
+
+
+/* end of newsletter */
+
+
 
 
 
