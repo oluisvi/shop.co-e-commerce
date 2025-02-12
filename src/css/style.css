@@ -592,21 +592,96 @@ body, p, a {
 
 footer{
   background-color: #F0F0F0;
-  padding: 4rem 8rem;
+  padding: 4rem 6rem;
 }
 
 footer ul{
   list-style: none;
 }
 
-.section-8-title{
+.container-footer{
+  width: 1240px;
+  height: 177px;
+}
+
+footer .footer{
+  display: flex;
+
+}
+
+footer .footer-socials{
+  width: 248px;
+  margin: 0;
+  align-items: left;
+  text-align: left;
+}
+
+footer .footer-socials h3{
   font-size: 2rem;
+  font-weight: 900;
+  
+}
+
+footer .footer-socials p{
+  font-size: 0.9rem;
+  text-align: left;
+  opacity: calc(60%);
+
+
+}
+
+.social-icons{
+  display: flex;
+
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  font-size: 24px;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+  
+.active {
+  background-color: black;
+  border-color: black;
+}
+
+
+.icon:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+.icon.active:hover {
+  background-color: black;
+  color: black;
+  border-color: black;
 }
 
 
 
-/*end of footer*/
+footer .footer-company, .footer-help, .footer-faq, .footer-resources, h3{
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: black;
+
+}
+
+footer .footer-company, .footer-help, .footer-faq, .footer-resources, li{
+  opacity: calc(60%);
+  margin-bottom: 15px;
+
+}
 
 
 
 
+/*end of footer*/             
