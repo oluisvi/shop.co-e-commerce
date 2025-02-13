@@ -6,6 +6,7 @@ h1 {
   font-weight: bold;
 }
 
+h3,
 p,
 ul {
   font-family: "Satoshi-Variable";
@@ -397,7 +398,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-grow: 2;
   justify-content: center;
   align-items: center;
 }
@@ -416,6 +416,7 @@ ul {
 .dress-styles img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 .fit-img {
@@ -612,7 +613,7 @@ footer ul {
 .container-footer {
   width: 1240px;
   height: 177px;
-  margin-left: 0 auto;
+  margin-bottom: 1rem;
 }
 
 footer .footer {
@@ -630,6 +631,7 @@ footer .footer-socials {
 
 footer .footer-socials h3 {
   font-size: 2.5rem;
+  margin-bottom: 10px;
   font-weight: 900;
 }
 
@@ -677,7 +679,7 @@ footer .footer-company,
 .footer-help,
 .footer-faq,
 .footer-resources h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: black;
 }
 
@@ -685,9 +687,8 @@ footer .footer-company,
 .footer-help,
 .footer-faq,
 .footer-resources li {
-  margin-bottom: 15px;
+  padding: 4px;
   opacity: calc(60%);
-  gap: 15px;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
