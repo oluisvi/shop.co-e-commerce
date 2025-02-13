@@ -1,0 +1,706 @@
+@import url("./fonts-css/satoshi.css");
+@import url("./fonts-css/integral_cf.css");
+
+
+h1, h2, h3 {
+  font-family: 'Integral CF';
+  font-weight: bold; 
+}
+
+/* Aplicando Satoshi */
+body, p, a {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: normal; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.before-nav {
+  padding: 10px;
+  max-width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.up-cookie {
+  color: white;
+  text-align: center;
+}
+
+.underline-cookie {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.close-icon {
+  position: absolute;
+  right: 10rem;
+  top: 0.7rem;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  max-width: 100%;
+}
+
+.shop-name {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.menu {
+  width: 30rem;
+  margin: 0 24px;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  cursor: pointer;
+  color: black;
+}
+
+.search-bar {
+  display: flex;
+  width: 25rem;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 62px;
+  margin-left: 1rem;
+}
+
+.search-icon {
+  margin-right: 5rem;
+}
+
+.search-bar {
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 300px;
+}
+
+.search-icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.input-search {
+  border: none;
+  background: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+.icons-nav {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*section-2*/
+
+.section-2 {
+  background-image: url("../assets/main-couple.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container-2 {
+  width: 100%;
+  height: 100vh;
+}
+
+.text-content {
+  max-width: 577px;
+  margin-left: 4rem;
+  padding: 4rem 0;
+  position: relative;
+  width: 50%;
+  text-align: left;
+}
+
+.text-content h1 {
+  font-size: 4rem;
+  width: 100%;
+}
+
+.text-content p {
+  width: 100%;
+  margin-top: 1rem;
+  opacity: calc(60%);
+}
+
+.shop-btn {
+  margin-left: 4rem;
+  width: 10rem;
+  height: 52px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 62px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 52px;
+  transition: 0.15s;
+  position: relative;
+}
+
+.shop-btn:hover {
+  background-color: #444;
+  color: white;
+}
+
+.top-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  padding-left: 4rem;
+  padding-top: 4rem;
+}
+
+.top-info ul {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.top-info h3 {
+  font-size: 3rem;
+  font-family: 'Satoshi';
+}
+
+.top-info p {
+  opacity: calc(60%);
+}
+
+.middle-info {
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-color: rgb(185, 185, 185);
+  padding: 0 3rem;
+}
+
+.stars {
+  position: absolute;
+  max-width: 100%;
+}
+
+.small-star {
+  transform: translate(800px, -450px);
+}
+
+.big-star {
+  transform: translate(1190px, -700px);
+}
+
+/*end of section-2*/
+
+/* Brands banner */
+
+.brands-banner {
+  width: 100%;
+  display: flex;
+  background-color: #000;
+  height: 5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 122px;
+}
+
+.brand {
+  align-items: center;
+}
+
+/* end of Brands banner */
+
+/* section-3*/
+
+.container-3 {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-left: 3.5rem;
+  margin-right: 4rem;
+  border-bottom: 1px solid;
+  border-color: #dadada;
+  justify-content: center;
+}
+
+.title-new-arrivals {
+  font-size: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  align-items: space-around;
+  gap: 1rem;
+  margin-bottom: 50px;
+}
+
+.clothes-card {
+  display: inline;
+}
+
+.clothes-img {
+  height: 295px;
+  width: 298px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border: none;
+}
+
+.clothes-img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-name {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-rating {
+  margin-top: 5px;
+}
+
+.rating-score {
+  margin-left: 5px;
+}
+
+.product-sale {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+.product-price {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+.product-discount {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 32px;
+}
+
+.discount-tag {
+  background-color: rgba(255, 0, 0, 0.1);
+  width: 50px;
+  height: 40px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 60px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clothing-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clothing-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.view-all-btn {
+  text-align: center;
+  margin-top: 2rem;
+  width: 15%;
+  margin: 0 auto;
+  height: 3rem;
+  border: 1.5px solid;
+  border-color: #c5c5c5;
+  border-radius: 62px;
+  box-shadow: 0 4px 8px rgba(143, 142, 142, 0.2);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  padding: 0;
+  transition: 0.2s;
+  text-align: center;
+  align-items: center;
+}
+
+.view-all-btn:hover {
+  background-color: #949494;
+  color: white;
+}
+
+/*end of section-3*/
+
+/*section-4*/
+
+.container-4 {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-left: 3.5rem;
+  margin-right: 4rem;
+  justify-content: center;
+}
+
+.title-top-selling {
+  font-size: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+
+}
+
+/*end of section-4*/
+
+/*section-5*/
+
+.section-5 {
+  width: 100%;
+  height: 100vh;
+}
+
+.section-5-title {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.container-5 {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 40px;
+  margin: 4rem;
+  padding: 1rem;
+  max-width: 100%;
+  max-height: 866px;
+}
+
+.dress-styles {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-shrink: 2;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dress-styles h3 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 2rem;
+  max-width: 100%;
+  color: black;
+  padding: 10px;
+  position: absolute;
+  transform: translateY(-10px);
+}
+
+.style-casual,
+.style-gym {
+  width: 30%;
+}
+
+.style-formal,
+.style-party {
+  width: 67.2%;
+}
+
+.dress-styles img {
+  width: 100%;
+  object-fit: cover;
+  height: 289px;
+}
+
+.fit-img {
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+/*end of section-5*/
+
+
+
+/*section-6*/
+
+.section-6 {
+  display: flex;
+  padding: 0;
+}
+
+
+
+.section-6-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+
+.change-arrows{
+  text-align: right;
+  position: relative;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  top: -50px;
+}
+
+
+.change-arrows svg {
+  cursor: pointer;
+}
+
+.container-6{
+  max-width: 100%;
+}
+.custumer-ratings {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+
+.customer-1, .customer-2, .customer-3, .customer-4, .customer-5 {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #dad9d9;
+  padding: 2rem;
+  min-width: 28%;
+  height: 230px;
+  text-align: left;
+  transition: 0.2s;
+}
+
+
+.customer-1:hover, .customer-2:hover, .customer-3:hover, .customer-4:hover, .customer-5:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.customer-1, .customer-5 {
+  filter: blur(2px);
+}
+
+
+
+.customer-name h3 {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.customer-avaliation p {
+  font-size: 1em;
+  color: #777;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .custumer-ratings {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .customer-1, .customer-2, .customer-3, .customer-4 {
+      width: 100%;
+      max-width: 300px;
+  }
+}
+
+
+/*end of section-6*/
+
+
+/* newsletter */
+
+.section-7{
+  background: linear-gradient(to bottom, #fff 50%, #F0F0F0 50%);
+}
+
+.newsletter {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  background-color: #000000;
+  padding: 4rem;
+  margin-top: 5rem;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.newsletter-form{
+  display: flex;
+  width: 80%;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-email{
+  height: 40px;
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 62px;
+  background-color: #fff;
+  align-items: left;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+}
+
+.news-btn{
+  height: 40px;
+  width: 70%;
+  border-radius: 62px;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  transition: 0.2s;
+  border: none;
+}
+
+.news-btn:hover {
+  background-color: #949494;
+  color: white;
+}
+
+
+/* end of newsletter */
+
+
+/* footer */
+
+footer{
+  background-color: #F0F0F0;
+  padding: 4rem 6rem;
+}
+
+footer ul{
+  list-style: none;
+}
+
+.container-footer{
+  width: 1240px;
+  height: 177px;
+}
+
+footer .footer{
+  display: flex;
+
+}
+
+footer .footer-socials{
+  width: 248px;
+  margin: 0;
+  align-items: left;
+  text-align: left;
+}
+
+footer .footer-socials h3{
+  font-size: 2rem;
+  font-weight: 900;
+  
+}
+
+footer .footer-socials p{
+  font-size: 0.9rem;
+  text-align: left;
+  opacity: calc(60%);
+
+
+}
+
+.social-icons{
+  display: flex;
+
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  font-size: 24px;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+  
+.active {
+  background-color: black;
+  border-color: black;
+}
+
+
+.icon:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+.icon.active:hover {
+  background-color: black;
+  color: black;
+  border-color: black;
+}
+
+
+
+footer .footer-company, .footer-help, .footer-faq, .footer-resources, h3{
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: black;
+
+}
+
+footer .footer-company, .footer-help, .footer-faq, .footer-resources li{
+  opacity: calc(60%);
+  margin-bottom: 15px;
+
+}
+
+
+
+
+/*end of footer*/             
