@@ -1,22 +1,21 @@
-@import url("./fonts-css/satoshi.css");
-@import url("./fonts-css/integral_cf.css");
+@import url("./Fontes/satoshi.css");
+@import url("./Fontes/integral_cf.css");
 
 
-h1, h2, h3 {
-  font-family: 'Integral CF', sans-serif;
+h1{
+  font-family: 'Integral-Bold';
   font-weight: bold; 
 }
 
-/* Aplicando Satoshi */
-body, p, a {
-  font-family: 'Satoshi', sans-serif;
+h2, h3, p{
+  font-family: 'Satoshi-Variable';
   font-weight: normal; 
 }
 
 * {
-  margin: auto;
+  margin: 0;
   padding: 0;
-  outline: none;
+  box-sizing: border-box;
   max-width: 1440px;
 }
 
@@ -223,11 +222,11 @@ body, p, a {
   display: flex;
   background-color: #000;
   height: 5rem;
-}
-
-.brand {
+  justify-content: space-around;
   align-items: center;
 }
+
+
 
 /* end of Brands banner */
 
@@ -251,6 +250,7 @@ body, p, a {
 
 .products {
   display: flex;
+  margin-bottom: 2%;
   align-items: space-around;
   gap: 1rem;
 }
@@ -291,16 +291,19 @@ body, p, a {
   display: flex;
   align-items: left;
   text-align: left;
-  margin-top: 5px;  
+  align-items: center;
+  gap: 5px;
 }
 .product-price {
   font-size: 2rem;
   margin: 0.5rem 0;
+
 }
 .product-discount {
   text-decoration: line-through;
   color: #999;
   margin-right: 10px;
+  font-size: 32px;
 }
 
 .discount-tag {
@@ -323,22 +326,20 @@ body, p, a {
 }
 
 .view-all-btn {
+  display: flex;
+  align-items: center;
   text-align: center;
-  margin-top: 2rem;
-  width: 10rem;
+  margin: auto;
+  width: 15%;
   height: 3rem;
   border: 1.5px solid;
   border-color: #c5c5c5;
   border-radius: 62px;
   box-shadow: 0 4px 8px rgba(143, 142, 142, 0.2);
-  display: flex;
   justify-content: center;
-  position: relative;
   background-color: rgb(252, 252, 252);
   padding: 0;
   transition: 0.2s;
-  text-align: center;
-  align-items: center;
 }
 
 .view-all-btn:hover {
@@ -372,7 +373,7 @@ body, p, a {
 
 .section-5 {
   width: 100%;
-  height: 100vh;
+  height: 886px;
 }
 
 .section-5-title {
@@ -387,19 +388,16 @@ body, p, a {
   border-radius: 40px;
   margin: 4rem;
   padding: 1rem;
-  max-width: 100%;
-  max-height: 866px;
+  width: 90%;
+  height: 866px;
 }
 
 .dress-styles {
   display: flex;
-  max-width: 100%;
   flex-wrap: wrap;
   gap: 30px;
-  flex-shrink: 2;
-  margin-bottom: 2rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  flex-grow: 2;
+  justify-content: center;
   align-items: center;
 }
 
@@ -416,12 +414,37 @@ body, p, a {
 
 .dress-styles img {
   object-fit: cover;
+  width: 100%;
 }
 
 .fit-img {
   border-radius: 20px;
-  justify-content: space-around;
 }
+
+
+.style-casual{
+  width: 407px;
+  height: 289px;
+}
+
+
+.style-formal{
+  width: 648px;
+  height: 289px;
+}
+
+
+.style-party{
+  width: 648px;
+  height: 289px;
+}
+
+
+.style-gym{
+  width: 407px;
+  height: 289px;
+}
+
 
 /*end of section-5*/
 
@@ -431,10 +454,8 @@ body, p, a {
 
 .section-6 {
   display: flex;
-  margin-top: 5rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
   padding: 0;
+  margin: 0;
 }
 
 
@@ -443,6 +464,7 @@ body, p, a {
   font-size: 2rem;
   font-weight: 900;
   margin-top: 4rem;
+  margin-left: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -450,10 +472,8 @@ body, p, a {
 .change-arrows{
   text-align: right;
   position: relative;
-  margin-right: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  
+  margin-right: 5rem;
+  top: -50px;
 }
 
 
@@ -466,11 +486,9 @@ body, p, a {
 }
 .custumer-ratings {
   display: flex;
-  flex-direction: row;
   overflow: hidden;
-  flex-wrap: wrap;
-  gap: 1px;
-  min-width: 28%;
+  gap: 20px;
+  justify-content: center;
 }
 
 
@@ -481,11 +499,10 @@ body, p, a {
   border: 1px solid;
   border-color: #dad9d9;
   padding: 2rem;
-  width: 320px;
-  height: 180px;
+  min-width: 28%;
+  height: 230px;
   text-align: left;
-  margin: 0.5rem;
-  transition: 0.2s ;
+  transition: 0.2s;
 }
 
 
@@ -493,7 +510,9 @@ body, p, a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
+.customer-1, .customer-5 {
+  filter: blur(2px);
+}
 
 
 
@@ -535,18 +554,18 @@ body, p, a {
 }
 
 .newsletter {
+  width: 80%;
   max-width: 100%;
-  height: 150px;
+  height: 230px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   color: #fff;
   font-size: 2rem;
   background-color: #000000;
   padding: 4rem;
-  margin-top: 5rem;
-  margin-right: 8rem;
-  margin-left: 8rem;
+  margin: auto;
+  margin-top: 5%;
   border-radius: 20px;
 }
 
@@ -560,8 +579,8 @@ body, p, a {
 }
 
 .news-email{
-  height: 20px;
-  width: 330px;
+  height: 40px;
+  width: 350px;
   padding: 0.5rem;
   border-radius: 62px;
   background-color: #fff;
@@ -592,7 +611,6 @@ body, p, a {
 
 footer{
   background-color: #F0F0F0;
-  padding: 4rem 6rem;
 }
 
 footer ul{
@@ -602,10 +620,13 @@ footer ul{
 .container-footer{
   width: 1240px;
   height: 177px;
+  margin-left: 0 auto;
 }
 
 footer .footer{
   display: flex;
+  margin-top:5%;
+  margin-left: 10%;
 
 }
 
@@ -617,7 +638,7 @@ footer .footer-socials{
 }
 
 footer .footer-socials h3{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
   
 }
@@ -630,17 +651,17 @@ footer .footer-socials p{
 
 }
 
-.social-icons{
+footer .social-icons{
   display: flex;
+  margin-top: 1rem;
 
 }
 
 .icon {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 28px;
   height: 28px;
+  justify-content: center;
   border: 1px solid #ccc;
   border-radius: 50%;
   font-size: 24px;
@@ -668,20 +689,62 @@ footer .footer-socials p{
 
 
 
-footer .footer-company, .footer-help, .footer-faq, .footer-resources, h3{
-  justify-content: space-between;
+footer .footer-company, .footer-help, .footer-faq, .footer-resources h3{
   margin-bottom: 1rem;
   color: black;
-
+  
 }
 
-footer .footer-company, .footer-help, .footer-faq, .footer-resources, li{
-  opacity: calc(60%);
+footer .footer-company, .footer-help, .footer-faq, .footer-resources li{
   margin-bottom: 15px;
+  opacity: calc(60%);
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 
 }
-
-
 
 
 /*end of footer*/             
+
+/* under footer */
+
+
+footer .under-footer {
+  width:80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #F0F0F0; 
+  border-top: 1px solid #ddd; 
+}
+
+footer .under-footer p {
+  font-size: 14px;
+  color: #666;
+}
+
+footer .payment {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+footer .payment-icons  {
+  background-color: #FFF;
+  align-items: center;
+  text-align: center;
+  width: 46px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+
+}
+
+
+
+/* end of under footer */
