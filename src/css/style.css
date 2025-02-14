@@ -16,9 +16,7 @@ ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1440px;
 }
-
 
 /*before nav*/
 
@@ -27,6 +25,7 @@ ul {
   max-width: 100%;
   background-color: black;
   position: relative;
+  font-family: "Satoshi-Variable";
 }
 
 .up-cookie {
@@ -48,6 +47,21 @@ ul {
 
 /* end of before nav*/
 
+/*responsive Mobile before nav*/
+@media screen and (max-width: 390px) {
+
+  .before-nav {
+    font-size: 12px;
+  }
+  .close-icon {
+    display: none;
+  }
+}
+
+/*responsive before nav*/
+
+/* navbar */
+
 .container-1 {
   width: 100%;
 }
@@ -63,10 +77,14 @@ ul {
   margin-right: 2rem;
 }
 
+.icon-menu-mobile{
+  display:none;
+}
+
 .shop-name {
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
-  font-family: 'Integral-Bold';
+  font-family: "Integral-Bold";
 }
 
 .menu {
@@ -91,6 +109,7 @@ ul {
   padding: 0.5rem 1rem;
   border-radius: 62px;
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .search-icon {
@@ -123,6 +142,57 @@ ul {
   cursor: pointer;
   margin-left: 1rem;
 }
+
+/* end of navbar */
+
+/* responsive navbar */
+
+@media screen and (max-width: 390px) {
+  
+  .navbar{
+    margin: 0;
+    height:50%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-menu-mobile{
+    display: block;
+    margin-left: 2rem;
+  }
+  .shop-name {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .search-bar{
+
+    background-color: #fff;
+    
+  }
+  
+  .input-search {
+    display: none;
+    align-items: center;
+  }
+
+  .search-icon {
+    display: none;
+    color: black;
+  }
+  .icons-nav{
+    font-size:10px; 
+    margin-left: 0;
+    margin-right: 2rem;
+    gap: 12px;
+  }
+  
+}
+
+/* end of responsive navbar */
 
 /*section-2*/
 
@@ -207,7 +277,6 @@ ul {
   opacity: calc(60%);
 }
 
-
 .middle-info {
   border-right: 1px solid;
   border-left: 1px solid;
@@ -260,8 +329,7 @@ ul {
   font-size: 2rem;
   margin: 2rem 2rem 2rem 0;
   text-align: center;
-  font-family: 'Integral-Bold';
-
+  font-family: "Integral-Bold";
 }
 
 .products {
@@ -269,7 +337,7 @@ ul {
   margin-bottom: 2%;
   align-items: space-around;
   gap: 1rem;
-  font-family: 'Satoshi-Variable';
+  font-family: "Satoshi-Variable";
 }
 
 .clothes-card {
@@ -382,8 +450,7 @@ ul {
   font-size: 2rem;
   margin: 2rem 2rem 2rem 0;
   text-align: center;
-  font-family: 'Integral-Bold';
-
+  font-family: "Integral-Bold";
 }
 
 /*end of section-4*/
@@ -397,21 +464,16 @@ ul {
 
 .section-5-title {
   font-size: 2rem;
-  font-family: 'Integral-Bold';
+  font-family: "Integral-Bold";
   text-align: center;
   padding-top: 4rem;
 }
-.section-5-title h2{
-  margin-top: 2rem;  
-
-}
-
 
 .container-5 {
   background-color: #f0f0f0;
   border: none;
   border-radius: 40px;
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 90%;
   height: 866px;
 }
@@ -547,7 +609,7 @@ ul {
   font-size: 1em;
   color: #777;
   line-height: 1.5;
-  font-family: 'Satoshi-Variable';
+  font-family: "Satoshi-Variable";
 }
 
 @media (max-width: 768px) {
@@ -573,16 +635,13 @@ ul {
   background: linear-gradient(to bottom, #fff 50%, #f0f0f0 50%);
 }
 
-.container-7{
+.container-7 {
   width: 1240px;
   max-width: 100%;
   margin: 0 auto;
 }
 
-
-
 .newsletter {
-  
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -594,9 +653,9 @@ ul {
   border-radius: 20px;
 }
 
-.newsletter h2{
+.newsletter h2 {
   width: 40%;
-  font-family: 'Integral-Bold';
+  font-family: "Integral-Bold";
 }
 
 .newsletter-form {
@@ -634,6 +693,36 @@ ul {
 
 /* end of newsletter */
 
+
+/* Responsive newsletter*/
+
+@media only screen and (max-width: 390px) {
+  
+  .container-7{
+    width: 90%;
+  }
+  .newsletter{
+    flex-direction: column;
+
+  }
+
+  .newsletter h2{
+    font-size: 1.7rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .news-email{
+    width: 150%;
+  }
+  .news-btn{
+    width: 150%;
+  }  
+
+}
+/* end of Responsive newsletter*/
+
 /* footer */
 
 footer {
@@ -666,7 +755,7 @@ footer .footer-socials {
 
 footer .footer-socials h3 {
   font-size: 2.5rem;
-  font-family: 'Integral-Bold';
+  font-family: "Integral-Bold";
   margin-bottom: 15px;
   font-weight: 900;
 }
@@ -676,7 +765,7 @@ footer .footer-socials p {
   text-align: left;
   margin-bottom: 10px;
   opacity: calc(60%);
-  font-family: 'Satoshi-Variable';
+  font-family: "Satoshi-Variable";
 }
 
 footer .social-icons {
@@ -738,7 +827,7 @@ footer .footer-company li,
 /* under footer */
 
 footer .under-footer {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -750,7 +839,7 @@ footer .under-footer {
 footer .under-footer p {
   font-size: 14px;
   color: #666;
-  font-family: 'Satoshi-Variable';
+  font-family: "Satoshi-Variable";
 }
 
 footer .payment {
@@ -773,3 +862,26 @@ footer .payment-icons svg {
 }
 
 /* end of under footer */
+
+/*Responsive Design*/
+
+@media only screen and (max-width: 390px) {
+  .under-footer{
+    width: 100%;
+    flex-direction: column;
+    
+  }
+
+  .under-footer p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .payment-icons{
+    margin-top: 1rem;
+    
+    
+    text-align: center;
+  }
+}
