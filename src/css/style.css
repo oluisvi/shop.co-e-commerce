@@ -7,7 +7,6 @@ h1 {
 }
 
 h3,
-p,
 ul {
   font-family: "Satoshi-Variable";
   font-weight: normal;
@@ -19,6 +18,9 @@ ul {
   box-sizing: border-box;
   max-width: 1440px;
 }
+
+
+/*before nav*/
 
 .before-nav {
   padding: 10px;
@@ -44,6 +46,8 @@ ul {
   cursor: pointer;
 }
 
+/* end of before nav*/
+
 .container-1 {
   width: 100%;
 }
@@ -62,6 +66,7 @@ ul {
 .shop-name {
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
+  font-family: 'Integral-Bold';
 }
 
 .menu {
@@ -95,7 +100,7 @@ ul {
 .search-bar {
   border-radius: 20px;
   padding: 10px 15px;
-  width: 300px;
+  width: 50%;
 }
 
 .search-icon {
@@ -116,6 +121,7 @@ ul {
   gap: 2rem;
   font-size: 20px;
   cursor: pointer;
+  margin-left: 1rem;
 }
 
 /*section-2*/
@@ -193,12 +199,14 @@ ul {
 }
 
 .top-info h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .top-info p {
   opacity: calc(60%);
 }
+
 
 .middle-info {
   border-right: 1px solid;
@@ -238,6 +246,7 @@ ul {
 /* section-3*/
 
 .container-3 {
+  width: 80%;
   max-width: 100%;
   height: 100vh;
   display: flex;
@@ -251,6 +260,8 @@ ul {
   font-size: 2rem;
   margin: 2rem 2rem 2rem 0;
   text-align: center;
+  font-family: 'Integral-Bold';
+
 }
 
 .products {
@@ -258,6 +269,7 @@ ul {
   margin-bottom: 2%;
   align-items: space-around;
   gap: 1rem;
+  font-family: 'Satoshi-Variable';
 }
 
 .clothes-card {
@@ -282,6 +294,7 @@ ul {
   font-size: 1.5rem;
   margin: 10px 0;
   color: #333;
+  font-weight: bold;
 }
 
 .product-rating {
@@ -302,6 +315,7 @@ ul {
 .product-price {
   font-size: 2rem;
   margin: 0.5rem 0;
+  font-weight: bold;
 }
 .product-discount {
   text-decoration: line-through;
@@ -359,6 +373,7 @@ ul {
   max-width: 100%;
   height: 100vh;
   display: flex;
+  justify-content: center;
   margin-left: 3.5rem;
   margin-right: 4rem;
 }
@@ -367,6 +382,8 @@ ul {
   font-size: 2rem;
   margin: 2rem 2rem 2rem 0;
   text-align: center;
+  font-family: 'Integral-Bold';
+
 }
 
 /*end of section-4*/
@@ -380,16 +397,20 @@ ul {
 
 .section-5-title {
   font-size: 2rem;
-  margin: 2rem;
+  font-family: 'Integral-Bold';
   text-align: center;
 }
+.section-5-title h2{
+  margin-top: 2rem;  
+
+}
+
 
 .container-5 {
   background-color: #f0f0f0;
   border: none;
   border-radius: 40px;
-  margin: 4rem;
-  padding: 1rem;
+  margin: 0 auto;  
   width: 90%;
   height: 866px;
 }
@@ -397,6 +418,7 @@ ul {
 .dress-styles {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 4rem;
   gap: 30px;
   justify-content: center;
   align-items: center;
@@ -517,12 +539,14 @@ ul {
   font-size: 1.2em;
   color: #555;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .customer-avaliation p {
   font-size: 1em;
   color: #777;
   line-height: 1.5;
+  font-family: 'Satoshi-Variable';
 }
 
 @media (max-width: 768px) {
@@ -548,25 +572,34 @@ ul {
   background: linear-gradient(to bottom, #fff 50%, #f0f0f0 50%);
 }
 
-.newsletter {
-  width: 80%;
+.container-7{
+  width: 1240px;
   max-width: 100%;
-  height: 230px;
+  margin: 0 auto;
+}
+
+
+
+.newsletter {
+  
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: #000000;
-  padding: 4rem;
-  margin: auto;
+  padding: 2rem;
   margin-top: 5%;
   border-radius: 20px;
 }
 
+.newsletter h2{
+  width: 40%;
+  font-family: 'Integral-Bold';
+}
+
 .newsletter-form {
   display: flex;
-  width: 1240px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -619,7 +652,8 @@ footer ul {
 footer .footer {
   display: flex;
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 5%;
+  justify-content: space-evenly;
 }
 
 footer .footer-socials {
@@ -631,14 +665,17 @@ footer .footer-socials {
 
 footer .footer-socials h3 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-family: 'Integral-Bold';
+  margin-bottom: 15px;
   font-weight: 900;
 }
 
 footer .footer-socials p {
   font-size: 0.9rem;
   text-align: left;
+  margin-bottom: 10px;
   opacity: calc(60%);
+  font-family: 'Satoshi-Variable';
 }
 
 footer .social-icons {
@@ -675,17 +712,18 @@ footer .social-icons {
   border-color: black;
 }
 
-footer .footer-company,
-.footer-help,
-.footer-faq,
+footer .footer-company h3,
+.footer-help h3,
+.footer-faq h3,
 .footer-resources h3 {
+  margin-top: 1rem;
   margin-bottom: 0.8rem;
   color: black;
 }
 
-footer .footer-company,
-.footer-help,
-.footer-faq,
+footer .footer-company li,
+.footer-help li,
+.footer-faq li,
 .footer-resources li {
   padding: 4px;
   opacity: calc(60%);
@@ -711,6 +749,7 @@ footer .under-footer {
 footer .under-footer p {
   font-size: 14px;
   color: #666;
+  font-family: 'Satoshi-Variable';
 }
 
 footer .payment {
