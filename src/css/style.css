@@ -320,15 +320,20 @@ ul {
   
   } 
 
+  .stars-mobile{
+    display: flex;
+  }
   .big-star-mobile{
     display: flex;
+    tansform: translate(200px, -1000px);
   }
   .small-star-mobile{
     display: flex;
+    tansform: translate(100px, -700px);
   }
 
 
-  .small-star{
+  .small-star {
     display: none;
   }
 
@@ -646,6 +651,9 @@ ul {
     padding-top: 1rem;
   }
 
+  .container-5{
+    height: 1030px;
+  }
   .dress-styles {
     margin-top: 2rem;
   }
@@ -657,7 +665,7 @@ ul {
   .dress-styles img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 190px;
   }
 
   .style-casual,
@@ -770,6 +778,10 @@ ul {
     margin-left: 1rem;
   }
 
+  .container-6{
+    margin-top: 110px;
+  }
+
   .change-arrows {
     justify-content: center;
     text-align: right;
@@ -865,6 +877,7 @@ ul {
 
 @media only screen and (max-width: 390px) {
   .container-7 {
+    margin-top: 10%;
     width: 90%;
   }
   .newsletter {
@@ -898,7 +911,6 @@ footer ul {
 
 .container-footer {
   width: 1240px;
-  height: 177px;
   margin-bottom: 1rem;
 }
 
@@ -934,6 +946,7 @@ footer .footer-socials p {
 footer .social-icons {
   display: flex;
   margin-top: 1rem;
+  gap: 10px;
 }
 
 .icon {
@@ -990,10 +1003,13 @@ footer .footer-company li,
 /*Responsive footer*/
 
 @media only screen and (max-width: 390px) {
+  
+  .social-icons
   footer .footer {
     justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
   }
   footer .footer-socials h3 {
     font-size: 1.8rem; /* Ajusta o tamanho da fonte para telas pequenas */
