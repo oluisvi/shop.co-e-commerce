@@ -325,11 +325,11 @@ ul {
   }
   .big-star-mobile{
     display: flex;
-    tansform: translate(200px, -1000px);
+    transform: translate(250px, -50px);
   }
   .small-star-mobile{
     display: flex;
-    tansform: translate(100px, -700px);
+    transform: translate(20px, 76px);
   }
 
 
@@ -432,6 +432,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    z-index: 1;
   }
 }
 
