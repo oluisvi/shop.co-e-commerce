@@ -183,6 +183,10 @@ ul {
     display: none;
     color: black;
   }
+
+  .search-icon-mobile{
+    display: flex;
+  }
   .icons-nav {
     font-size: 10px;
     margin-left: 0;
@@ -568,6 +572,7 @@ ul {
   .container-3 {
     margin: 0;
     width: 100%;
+    height: 65vh;
     overflow: hidden;
   }
 
