@@ -586,12 +586,14 @@ ul {
 
   .new-arrivals {
     max-width: 390px;
-    margin-left: 25px;
   }
 
   .products {
     gap: 20px;
     margin-bottom: 30px;
+  }
+  .new{
+    margin-left: 25px;
   }
 
   .title-new-arrivals {
