@@ -1,6 +1,6 @@
 /*Script da verificação do envio de email*/ 
 
-document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+document.getElementById('newsletterForm').addEventListener('submit', function(event) {
     // Previne o envio do formulário
     event.preventDefault();
 
