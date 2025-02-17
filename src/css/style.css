@@ -312,7 +312,7 @@ ul {
     
     background-color: #F0F0F0;
     background-repeat: no-repeat; 
-    background-position-y: 507px;
+    background-position-y: 470px;
     background-position-x: -370px;
     background-size: 200%;
     width: 100%; 
@@ -325,11 +325,11 @@ ul {
   }
   .big-star-mobile{
     display: flex;
-    transform: translate(250px, -50px);
+    transform: translate(250px, -250px);
   }
   .small-star-mobile{
     display: flex;
-    transform: translate(20px, 76px);
+    transform: translate(20px, -176px);
   }
 
 
@@ -432,7 +432,13 @@ ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    z-index: 1;
+    justify-content: space-evenly;
+    height: 146px;
+  }
+
+  .brands-banner svg{
+    height: 27px;
+    width: 110px;
   }
 }
 
@@ -1005,7 +1011,6 @@ footer .footer-company li,
 
 @media only screen and (max-width: 390px) {
   
-  .social-icons
   footer .footer {
     justify-content: space-between;
     flex-direction: column;
