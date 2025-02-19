@@ -51,6 +51,31 @@ document.addEventListener("DOMContentLoaded", function () {
     updateVisibility();
     updateBlurEffect(); // Atualiza o efeito de desfoque após a movimentação
   }
+  // Adiciona os event listeners para as setas
+  rightArrow.addEventListener("click", moveRight);
+  leftArrow.addEventListener("click", moveLeft);
+
+  // Funcionalidade de rolagem para dispositivos móveis
+  let isDragging = false;
+  let startX;
+  let scrollLeft;
+
+  carousel.addEventListener("touchstart", (e) => {
+    isDragging = true;
+    startX = e.touches[0].pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+  });
+
+  carousel.addEventListener("touchend", () => {
+    isDragging = false;
+  });
+
+  carousel.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+    const x = e.touches[0].pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2; // Ajuste de velocidade
+    carousel.scrollLeft = scrollLeft - walk;
+  });
 
 
   // Inicializa a visibilidade e o efeito de desfoque
