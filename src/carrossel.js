@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateVisibility();
     updateBlurEffect(); // Atualiza o efeito de desfoque após a movimentação
   }
+
   // Adiciona os event listeners para as setas
   rightArrow.addEventListener("click", moveRight);
   leftArrow.addEventListener("click", moveLeft);
@@ -76,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const walk = (x - startX) * 2; // Ajuste de velocidade
     carousel.scrollLeft = scrollLeft - walk;
   });
-
 
   // Inicializa a visibilidade e o efeito de desfoque
   updateVisibility();
