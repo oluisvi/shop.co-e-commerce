@@ -13,7 +13,9 @@ Projeto com objetivo da criação e de um E-commerce, com um protótipo desenvol
 
 <img align="left" alt="JavaScript" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> JavaScript: Validação.
 
-<img align="left" alt="Node.js" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /> JavaScript: Validação.
+<img align="left" alt="Node.js" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /> Node.js: Criação de rotas no servidor.
+
+<img align="left" alt="PostgreSQL" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" /> PostgreSQL: Criação do banco de dados.
 
 <img align="left" alt="React" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> React: Componentização da página.
 
