@@ -1,6 +1,6 @@
 # Projeto Shop.co E-commerce
 
-Projeto com objetivo da criação da home page de um E-commerce, com um protótipo desenvolvido no Figma. O desenolvimento do projeto contém uma base que irá ser utilizada para realização de outras implementações e expansões de conteúdo a partir dela, como detalhes do produto, categoria e carrinho de compras.
+Projeto com objetivo da criação e de um E-commerce, com um protótipo desenvolvido no Figma. A primeira etapa do projeto, que era a criação de sua homepage responsiva para mobile e desktop, foi finalizada, e com isso o projeto está na etapa final, onde serão implementadas mais duas telas: produtos e categorias. .
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -13,13 +13,15 @@ Projeto com objetivo da criação da home page de um E-commerce, com um protóti
 
 <img align="left" alt="JavaScript" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> JavaScript: Validação.
 
+<img align="left" alt="React" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> React: Componentização da página.
+
 <img align="left" alt="Figma" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" /> Figma: Design do protótipo a ser seguido.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Funcionalidades
-- Homepage.
+- Homepage, que apresenta o e-commerce e seu conteúdo principal.
 
 - Layout responsivo para diferentes tamanhos de tela (Desktop e mobile).
 
@@ -28,3 +30,7 @@ Projeto com objetivo da criação da home page de um E-commerce, com um protóti
 - Navbar funcional.
 
 - Integração de elementos interativos (botões, links, etc.).
+
+- Página de produtos, onde o usuário irá visualizar as informações do produto e suas avaliações
+
+- Página de categorias, onde o usuário ira pesquisar os produtos de acordo com a categoria que ele deseja, através de um filtro de busca
