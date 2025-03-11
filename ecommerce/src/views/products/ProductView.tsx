@@ -56,10 +56,10 @@ function ProductView() {
                   </div>
                   <div className="product-sale">
                     <div className="product-price">
-                      <p>$212</p>
+                      <p>$260</p>
                     </div>
-                    <div className="product-discount">$242</div>
-                    <div className="discount-tag">-20%</div>
+                    <div className="product-discount">$260</div>
+                    <div className="discount-tag">-40%</div>
                   </div>
                   <div className="product-details-info">
                     <p>
@@ -72,10 +72,8 @@ function ProductView() {
                     <article className="product-color-selection">
                       <p>Select Colors</p>
                       <div className="color-options">
-                        <div className="color-circle-1">
-                          <span className="checkmark">
-                            <img src="/assets/check-selection" alt="" />
-                          </span>
+                        <div className="color-circle-1 active">
+                          <img src="/assets/checkmark.svg" alt="" />
                         </div>
                         <div className="color-circle-2"></div>
                         <div className="color-circle-3"></div>
@@ -85,27 +83,27 @@ function ProductView() {
                     <article className="product-view-size">
                       <p>Choose size</p>
                       <div className="size-btn">
-                        <div className="small-btn">
-                          <button>Small</button>
+                        <div className="small-button">
+                          <button className="small-btn">Small</button>
                         </div>
-                        <div className="medium-btn">
-                          <button>Medium</button>
+                        <div className="medium-button">
+                          <button className="medium-btn">Medium</button>
                         </div>
-                        <div className="large-btn">
-                          <button>Large</button>
+                        <div className="large-button">
+                          <button className="large-btn">Large</button>
                         </div>
-                        <div className="x-large-btn">
-                          <button>X-Large</button>
+                        <div className="x-large-button">
+                          <button className="x-large-btn">X-Large</button>
                         </div>
                       </div>
                     </article>
                     <article className="add-cart-buttons">
-                        <button className="number-of-itens">
+                        <button className="number-of-itens-btn">
                             <p>
                                 <span>-</span>1<span>+</span>
                             </p> 
                         </button>
-                        <button className="add-to-cart">
+                        <button className="add-to-cart-btn">
                             <p>Add to Cart</p>
                         </button>
                     </article>
