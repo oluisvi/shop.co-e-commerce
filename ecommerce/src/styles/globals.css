@@ -41,7 +41,7 @@ ul {
 
 .close-icon {
   position: absolute;
-  right: 5%;
+  right: 4.7%;
   top: 30%;
   cursor: pointer;
   background-color: black;
@@ -1250,6 +1250,158 @@ footer .payment-icons svg {
 
 /*Página de produtos*/
 
+
+
+/*section product-view*/
+.product-view-container{
+  padding-top: 3%;
+  padding-left: 4%;
+  width: 100%;
+  
+}
+
+
+.products-route-page{
+  display: flex;
+  gap: 1.5%;
+  padding-bottom: 2%;
+}
+
+.products-route-page p{
+  font-family: 'Satoshi-Variable';
+  opacity: calc(60%);
+}
+
+.products-route-page p:nth-last-child(1) {
+  opacity: calc(100%);
+}
+
+
+
+.product-view-cards{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  align-items: center;
+}
+
+
+.product-front img, 
+.product-back img, 
+.product-model img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-main{
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+.product-front img{
+  height: 168px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.products-view-details img{
+  border: none;
+  border-radius: 20px;
+  transition: 0.4s ;
+
+}
+.products-view-details img:hover{
+  border-radius: 20px;
+  border: #000000 0.5px solid;
+
+}
+
+.products-view-details{
+  font-family: 'Satoshi-Variable';
+}
+
+.product-color-selection{
+  padding-top: 2%;
+  border-bottom: #c5c5c5 1px solid;
+  
+}
+
+.information-details{
+  padding-left: 2%;
+  width: 100%;
+}
+
+.information-details > .product-name{
+  font-family: 'Integral-Bold';
+  font-weight: bold;
+  color: black;
+  font-size: 2rem;
+  width: 300%;
+}
+
+.color-options{
+  display: flex;
+  gap: 10px;
+  padding-bottom: 2%;
+}
+
+.product-view-size{
+  padding-top: 2%;
+}
+
+
+.product-info-option{
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.info-option{
+  width: 100%;
+  margin-right: 5%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 20%;
+  border-bottom: #c5c5c5 1px solid;
+}
+
+.info-option p{
+  font-size: 1rem;
+  font-family: 'Satoshi-Variable';
+  padding-bottom: 1rem;
+}
+
+.selection::after{
+  color: black;
+  border-width: 10rem;
+  border-bottom: #d6d5d5 1px solid;
+
+}
+
+.selection :hover{
+  color: black;
+  gap: 40%;
+  border-width: 5%;
+  border-bottom: #000000 1px solid;
+}
+
+
+
+
+
+
+/*end of product view*/
 
 /*section-reviews*/
 
