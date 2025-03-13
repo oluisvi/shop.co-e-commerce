@@ -7,13 +7,11 @@ Projeto com objetivo da criação e de um E-commerce, com um protótipo desenvol
 
 ### Tecnologias Utilizadas
 
-<img align="left" alt="HTML5" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /> HTML: Estrutura da página e conteúdo.
+<img align="left" alt="Next.js" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" /> Next.js: Estruturação e gerenciamento de rotas.
 
 <img align="left" alt="CSS3" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /> CSS: Estilização e responsividade.
 
-<img align="left" alt="JavaScript" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> JavaScript: Validação.
-
-<img align="left" alt="Node.js" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /> Node.js: Criação de rotas no servidor.
+<img align="left" alt="TypeScript" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /> TypeScript: Ações dinâmicas do website.
 
 <img align="left" alt="PostgreSQL" width="26px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" /> PostgreSQL: Criação do banco de dados.
 
@@ -35,6 +33,6 @@ Projeto com objetivo da criação e de um E-commerce, com um protótipo desenvol
 
 - Integração de elementos interativos (botões, links, etc.).
 
-- Página de produtos, onde o usuário irá visualizar as informações do produto e suas avaliações
+- Página de produtos, onde o usuário irá visualizar as informações do produto e suas avaliações.
 
-- Página de categorias, onde o usuário ira pesquisar os produtos de acordo com a categoria que ele deseja, através de um filtro de busca
+- Página de categorias, onde o usuário ira pesquisar os produtos de acordo com a categoria que ele deseja, através de um filtro de busca.
