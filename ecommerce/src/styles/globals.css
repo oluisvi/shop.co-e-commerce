@@ -173,6 +173,10 @@ ul {
     gap: 2rem;
   }
   .shop-name {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
     font-size: 1rem;
     margin-bottom: 8px;
   }
@@ -199,8 +203,6 @@ ul {
   }
   .icons-nav {
     font-size: 10px;
-    margin-left: 0;
-    margin-right: 2rem;
     gap: 12px;
   }
 }
@@ -2237,13 +2239,21 @@ footer .payment-icons svg {
 
 .category-page-header{
   display: flex;
-  width: 88%;
+  width: 90%;
   justify-content: space-between;
 }
+.category-page-header p{
+  font-size: 1rem;
+}
+
 
 .category-pages{
   display: flex;
   gap: 1rem;
+}
+
+.filter-btn-cat{
+  display:none;
 }
 
 .category-page-filter span{
@@ -2345,9 +2355,6 @@ footer .payment-icons svg {
   color: black;
 }
 
-.preview-page-btn svg:hover{
-  filter: invert(0);
-}
 
 .main-category-load{
   width: 100%;
@@ -2365,6 +2372,71 @@ footer .payment-icons svg {
 
   }
 
+  .category-page-header{
+    padding-bottom: 4%;
+  }
+
+  .category-title h2{
+    font-size: 1.5rem;
+  }
+
+  .products-route-categories{
+    padding-left: 4%
+  }
+
+
+  .category-page-filter{
+    display: none;
+  }
+
+  .category-pages{
+    display: flex;
+    align-items: center;
+  }
+
+  .products-category-pages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 4%;
+  }
+
+  .products-category-pages .clothes-card img{
+    height: 140px;
+    width: 120px;
+
+  }
+  .products-category-pages .product-name  {
+    font-size: 1rem;
+  }
+
+
+  .products-category-pages .product-price {
+    font-size: 1.1rem;
+  }
+
+  .products-category-pages .product-rating  {
+    font-size: 0.9rem;
+  }
+
+
+  .category-pages p{
+    font-size: 0.85rem;
+  }
+
+  .category-page-footer{
+    justify-content: space-evenly;
+
+  }
+  
+  .filter-btn {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    background-color: #979797;
+    transition: all 0.2s;
+  }
+  
 
   .next-page-btn{
     display: flex;
@@ -2376,9 +2448,9 @@ footer .payment-icons svg {
     border-radius: 5px;
   }
 
-  .previous-page-btn{
+  .preview-page-btn{
     display: flex;
-    width: 5.6rem;
+    width: 36%;
     justify-content: space-around;
     align-items: center;
     height: 2.5rem;
@@ -2391,8 +2463,5 @@ footer .payment-icons svg {
   visibility: hidden;
   }
 
-  .actual-page-selection{
-
-  }
 
 }
